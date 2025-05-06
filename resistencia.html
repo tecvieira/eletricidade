@@ -10,9 +10,7 @@
     <header id="cabecalho">
         <div>
             <img src="image/logo-tecvandeRec.png" alt="logotipo tecvander"></div>
-        <div id="menHeader">
-            <h2>Resistência</h2>
-        </div>
+        
        <nav>
         <a href="#">CALCULAR</a>
         <a href="index.html">VOLTAR</a>
@@ -21,6 +19,7 @@
     </header>
     <main>
         <section>
+            <h1>Resistência</h1>
             <div id="fundamentos">
                 
                     <strong> Entendendo Melhor:</strong><br>
@@ -43,12 +42,28 @@
                     Essa lei nos diz que a corrente em um circuito é diretamente proporcional à tensão aplicada e inversamente proporcional à resistência.
                 </p>
             </div>
+            
 
         </section>
     </main>
+            <input type="number" name="tensao" id="tensao" placeholder="informe a tensão">
+            <input type="number" name="corrente" id="corrente" placeholder="informe a corrente">
+            <input type="button" value="calcular" onclick="calcular()">
+            <div id="res">Resultado</div>
     <footer>
 
     </footer>
+    <script>
+        function calcular(){
+            let tens = window.document.getElementById('tensao')
+            let corr = window.document.getElementById('corrente')
+            let res = document.getElementById('res')
+            let t1 = number(tens.value)
+            let c1 = number(corr.value)
+            let calc = t1 / c1
+            res.innerHTML = `O valor da resistência calculada é <strong>${calc}</strong> ohms`
+        }
+    </script>
     
 </body>
 </html>
