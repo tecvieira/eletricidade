@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabecalho{
+    display: block;
+    padding: 15px;
+   
+    background-color: black;
+    color: rgb(107, 174, 222);
+}
+
+nav{
+    text-align: right;
+    padding: 15px;
+
+}
+
+nav > a{
+    color: black;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(107, 174, 222);
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+
+nav > a:hover{
+    background-color: rgb(13, 65, 103);
+    color: white;
+    font-style:italic;
+    font-weight: bolder;
+}
+
+#fundamentos{
+    padding: 15px;
+    text-indent: 10px;
+    max-width: 800px;
+    text-align: justify;
+}
