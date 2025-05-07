@@ -58,8 +58,8 @@
             let tens = window.document.getElementById('tensao')
             let corr = window.document.getElementById('corrente')
             let res = document.getElementById('res')
-            let t1 = number(tens.value)
-            let c1 = number(corr.value)
+            let t1 = Number(tens.value)
+            let c1 = Number(corr.value)
             let calc = t1 / c1
             res.innerHTML = `O valor da resistência calculada é <strong>${calc}</strong> ohms`
         }
