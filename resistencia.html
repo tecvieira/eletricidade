@@ -12,7 +12,7 @@
             <img src="image/logo-tecvandeRec.png" alt="logotipo tecvander"></div>
         
        <nav>
-        <a href="#">CALCULAR</a>
+        <a href="#">POTÊNCIA</a>
         <a href="index.html">VOLTAR</a>
         <a href="https://www.google.com/">SAIR</a>
        </nav>
@@ -47,7 +47,7 @@
 
     <input type="number" name="tensao" id="tensao" placeholder="informe a tensão">
     <input type="number" name="corrente" id="corrente" placeholder="informe a corrente">
-    <input type="button" value="calcular" onclick="calcular()">
+    <input type="button" value="calcular" id="click" onclick="calcular()">
     <div id="res">Resultado</div>
 
     <footer>
@@ -61,8 +61,8 @@
             let res = document.getElementById('res')
             let t1 = Number(tens.value)
             let c1 = Number(corr.value)
-            let calc = t1 / c1
-            res.innerHTML = `O valor da resistência calculada é <strong>${calc}</strong> ohms`
+            let calc = t1 / c1           
+            res.innerHTML = `O valor da resistência calculada é <strong>${calc.toFixed(1)}</strong> ohms`
         }
     </script>
     
