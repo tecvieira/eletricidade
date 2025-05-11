@@ -5,14 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 body{
-    margin: 10px;
-    
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 
 #cabecalho{
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 15px;
     background-color: black;
     color: rgb(107, 174, 222);
@@ -20,15 +21,14 @@ body{
 
 nav{
     text-align: right;
-    margin: 20px;
-    
+    padding: 15px;
 
 }
 
 nav > a{
     color: black;
     margin: 5px;
-    padding: 10px;
+    padding: 2px;
     background-color: rgb(107, 174, 222);
     border-radius: 5px;
     text-decoration: none;
@@ -42,45 +42,9 @@ nav > a:hover{
     font-weight: bolder;
 }
 
-section > h1{
-    padding: 10px;
-}
-
-#res{
-    text-align: center;
-    padding: 15px;
-}
-
-input#tensao{
-  
-    margin-left: 15px;
-    height: 25px;    
-    text-align: center;
-}
-input#corrente{
-    margin: 5px;
-    height: 25px;
-    text-align: center;
-}
-
-input#click{
-    height: 25px;
-    width: 55px;
-    padding: 2px;
-    border-radius: 5px;
-    background-color: red;
-    color: white;
-    font-style: italic;
-}
-
 #fundamentos{
     padding: 15px;
     text-indent: 10px;
     max-width: 800px;
     text-align: justify;
-}
-
-footer{
-    padding-top: 20px;
-    text-align: center;
 }
