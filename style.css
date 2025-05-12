@@ -32,16 +32,23 @@ header > img{
 #navTeclas{
     text-align: right;
     font: 1.2em arial;
-    text-decoration: none;
+    
     
 }
 
 #navTeclas > a{
     background-color: rgb(118, 209, 232);
+    text-decoration: none;
+    color: black;
     border-radius: 4px;
     margin: 8px;
     padding: 2px;
     font-size: 0.8em;
+}
+
+#navTeclas > a:hover{
+    background-color: rgb(255, 81, 0);
+    transition: background-color .50s ;
 }
 
 section > h1{
