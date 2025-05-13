@@ -1,74 +1,42 @@
-@charset "UTF-8";
-
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-
-}
-
-body{
-    background-color: rgb(10, 9, 11);
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 1.2em;
-    line-height: 1.5em;
-}
-
-.container{
-    display: flex;
-    flex-flow: column nowrap;
-    height: 100vh;
-    max-width: 1000px;
-    
-    
-}
-header > img{
-   justify-content: center;
-   padding-top: 20px;
-}
-
-#navTeclas{
-    text-align: right;
-    font: 1.2em arial;
-    
-    
-}
-
-#navTeclas > a{
-    background-color: rgb(118, 209, 232);
-    text-decoration: none;
-    color: black;
-    border-radius: 4px;
-    margin: 8px;
-    padding: 2px;
-    font-size: 0.8em;
-}
-
-#navTeclas > a:hover{
-    background-color: rgb(255, 81, 0);
-    transition: background-color .50s ;
-}
-
-section > h1{
-    padding: 20px 0px 10px 0px;
-
-    text-align: left;
-}
-section > p{
-    text-align: justify;
-}
-section > strong{
-    text-align: left;
-}
-ul{
-    padding: 15px;
-    text-align: justify;
-}
-
-footer{
-    color: rgb(118, 209, 232);
-    padding-bottom: 15px;
-    font-size: 1.2em;
-}
+ /* Estilos personalizados podem ser adicionados aqui, se necessário,
+           mas tentaremos usar o Tailwind CSS o máximo possível. */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Um cinza claro suave para o fundo */
+        }
+        .content-card {
+            background-color: white;
+            border-radius: 0.75rem; /* Bordas mais arredondadas */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 1.5rem; /* 24px */
+            padding: 1.5rem; /* 24px */
+        }
+        .content-card h2 {
+            color: #1e3a8a; /* Um azul escuro para os títulos h2 */
+            border-bottom: 2px solid #3b82f6; /* Uma borda azul mais clara */
+            padding-bottom: 0.5rem; /* 8px */
+            margin-bottom: 1rem; /* 16px */
+        }
+        .content-card ul li {
+            background-color: #e0f2fe; /* Azul muito claro para itens da lista */
+            border-left: 4px solid #3b82f6; /* Borda lateral azul */
+            padding: 0.75rem; /* 12px */
+            margin-bottom: 0.5rem; /* 8px */
+            border-radius: 0.375rem; /* 6px */
+        }
+        .logo-container img {
+            max-height: 80px; /* Ajuste a altura máxima do logo conforme necessário */
+        }
+        /* Fallback para a imagem do logo */
+        .logo-fallback {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px; /* Mesma largura do logo */
+            height: 80px; /* Mesma altura do logo */
+            background-color: #e5e7eb; /* Cinza claro */
+            color: #4b5563; /* Cinza escuro */
+            font-weight: bold;
+            border-radius: 0.375rem;
+            text-align: center;
+        }

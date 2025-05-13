@@ -1,57 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tecvander</title>
+    <title>TecVander - Entendendo a Eletricidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav id="navTeclas">
-            <a href="">Tensão</a>
-            <a href="">Corrente</a>
-            <a href="">Resistência</a>
-        </nav>
-    <div class="container">
-        <header>
-        <img src="image/logo-tecvandeRec.png" alt="logotipo tecvander">
+<body class="text-gray-800">
 
-        </header>
-        <section>
-            <h1>Eletricidade entre nós.</h1>
-            <p>
-                A eletricidade, em seu conceito mais fundamental, refere-se a um conjunto de fenômenos físicos associados à presença e ao movimento de cargas elétricas. Essas cargas são propriedades intrínsecas de partículas subatômicas, como os elétrons (que possuem carga negativa) e os prótons (que possuem carga positiva).
-            </p><br>
-            <strong>
-                <p>De forma simplificada, podemos entender a eletricidade através de alguns conceitos-chave:</p>
-            </strong>
-            <ul>
-                <li>
-                    <strong>Carga Elétrica:</strong> É a propriedade fundamental da matéria que causa os fenômenos elétricos. Pode ser positiva ou negativa, e cargas opostas se atraem enquanto cargas iguais se repelem. A unidade de medida da carga elétrica no Sistema Internacional de Unidades (SI) é o Coulomb (C).
-                </li>
-                <li>
-                    <strong>Corrente Elétrica:</strong> É o fluxo ordenado de cargas elétricas, geralmente elétrons, através de um material condutor, como um fio metálico. Para que haja corrente elétrica, é necessário que exista uma diferença de potencial elétrico entre dois pontos do condutor. A intensidade da corrente elétrica é medida em Ampères (A).
-                </li>
-                <li>
-                    <strong>Resistência Elétrica:</strong> É a oposição que um material oferece à passagem da corrente elétrica. Materiais com baixa resistência, como os metais (cobre, prata), são bons condutores de eletricidade. Materiais com alta resistência, como borracha e plástico, são isolantes. A resistência elétrica é medida em Ohms (Ω).
-                </li>
-            </ul>
-            <strong>
-                <p>A eletricidade pode se manifestar de duas formas principais:</p>
-            </strong>
-            <ul>
-                <li>
-                    <strong>Eletrostática:</strong> Estuda os fenômenos relacionados às cargas elétricas em repouso, como a atração e repulsão entre corpos carregados.
-                </li>
-                <li>
-                    <strong>Eletrodinâmica:</strong> Estuda os fenômenos relacionados às cargas elétricas em movimento, ou seja, a corrente elétrica e seus efeitos, como o aquecimento de um fio (efeito Joule) ou a geração de campos magnéticos.
-                </li>
-            </ul>
-            <p>Em resumo, a eletricidade é um fenômeno natural decorrente das propriedades das cargas elétricas e seu movimento, sendo a base para o funcionamento de inúmeros dispositivos e tecnologias que utilizamos em nosso dia a dia.</p>
+    <header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-8 shadow-lg">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+            <div class="logo-container mb-4 md:mb-0 flex items-center">
+                <img src="logo-tecvandeRec.png"
+                     alt="Logotipo TecVander"
+                     class="rounded-md"
+                     onerror="this.style.display='none'; document.getElementById('logo-fallback-header').style.display='flex';">
+                <div id="logo-fallback-header" class="logo-fallback" style="display:none;">TecVander Logo</div>
+                <h1 class="text-4xl font-bold ml-4"></h1>
+            </div>
+            <h2 class="text-2xl font-semibold text-center md:text-right">Entendendo a Eletricidade</h2>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+
+        <section id="o-que-e" class="content-card">
+            <h2 class="text-3xl font-semibold">O que é Eletricidade?</h2>
+            <p class="mb-4 text-lg leading-relaxed">
+                A eletricidade é uma forma de energia resultante da existência de cargas elétricas (como elétrons e prótons), seja estaticamente como um acúmulo de carga ou dinamicamente como uma corrente. É o fluxo de elétrons através de um material condutor, como um fio de cobre.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Ela está presente em quase todos os aspectos da nossa vida moderna, alimentando nossas casas, indústrias e tecnologias, tornando-se uma força invisível, porém indispensável.
+            </p>
         </section>
-        <footer>
-            <p>Powered By TecVander</p>
-        </footer>
-    </div>
+
+        <section id="conceitos" class="content-card">
+            <h2 class="text-3xl font-semibold">Conceitos Fundamentais</h2>
+            <p class="mb-6 text-lg leading-relaxed">Para entender como a eletricidade funciona, precisamos conhecer alguns conceitos básicos:</p>
+            <ul class="space-y-3">
+                <li>
+                    <strong class="text-blue-700 text-xl">Tensão Elétrica (Voltagem - V):</strong> Pense nela como a "pressão" ou "força" que empurra os elétrons através do condutor. É a diferença de potencial elétrico entre dois pontos. Quanto maior a tensão, maior a "força" que impulsiona a corrente. É medida em Volts (V).
+                </li>
+                <li>
+                    <strong class="text-blue-700 text-xl">Corrente Elétrica (Amperagem - A):</strong> É o fluxo real de elétrons passando por um ponto do condutor em um determinado intervalo de tempo. Imagine como a quantidade de água que passa por uma mangueira. É medida em Amperes (A).
+                </li>
+                <li>
+                    <strong class="text-blue-700 text-xl">Resistência Elétrica (R):</strong> É a oposição que um material oferece à passagem da corrente elétrica. Materiais diferentes têm resistências diferentes. Pense em como uma mangueira mais estreita dificulta a passagem da água. É medida em Ohms ($\Omega$).
+                </li>
+                <li>
+                    <strong class="text-blue-700 text-xl">Potência Elétrica (W):</strong> Representa a taxa na qual a energia elétrica é convertida em outra forma de energia (luz, calor, movimento). É o "trabalho" que a eletricidade realiza. Calculada como Tensão x Corrente ($P = V \times I$). É medida em Watts (W).
+                </li>
+            </ul>
+            <p class="mt-6 text-lg leading-relaxed">
+                Estes conceitos estão intrinsecamente relacionados pela Lei de Ohm, uma das leis fundamentais da eletricidade: $V = R \times I$ (Tensão é igual a Resistência vezes Corrente).
+            </p>
+        </section>
+
+        <section id="importancia" class="content-card">
+            <h2 class="text-3xl font-semibold">Importância no Dia a Dia</h2>
+            <p class="text-lg leading-relaxed">
+                Desde acender uma lâmpada, carregar seu celular, assistir televisão, usar o computador, até o funcionamento de hospitais e grandes indústrias, a eletricidade é essencial. Ela revolucionou a forma como vivemos, trabalhamos, nos comunicamos e nos divertimos, sendo a espinha dorsal da sociedade tecnológica atual.
+            </p>
+        </section>
+
+        <section id="seguranca" class="content-card">
+            <h2 class="text-3xl font-semibold">Segurança Elétrica: Uma Prioridade</h2>
+            <p class="mb-4 text-lg leading-relaxed">
+                A eletricidade é poderosa e útil, mas também pode ser perigosa se não for manuseada com o devido respeito e conhecimento. É fundamental ter cuidado ao lidar com instalações e aparelhos elétricos.
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-lg">
+                <li>Nunca toque em fios desencapados ou danificados.</li>
+                <li>Não sobrecarregue tomadas utilizando múltiplos adaptadores ("benjamins" ou "Tês") de forma excessiva.</li>
+                <li>Evite o contato de aparelhos elétricos com água.</li>
+                <li>Sempre chame um eletricista qualificado para reparos e instalações elétricas complexas.</li>
+                <li>Utilize dispositivos de proteção, como disjuntores e DRs (Diferencial Residual).</li>
+            </ul>
+            <p class="mt-4 text-lg leading-relaxed font-semibold text-red-600">
+                Lembre-se: a segurança vem sempre em primeiro lugar!
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4">
+                <img src="logo-tecvandeRec.png"
+                     alt="Logotipo TecVander Rodapé"
+                     class="mx-auto rounded-md"
+                     style="max-height: 60px;"
+                     onerror="this.style.display='none'; document.getElementById('logo-fallback-footer').style.display='flex';">
+                <div id="logo-fallback-footer" class="logo-fallback mx-auto" style="display:none; height: 60px; width: 120px;">TecVander</div>
+            </div>
+            <p>&copy; <span id="currentYear"></span> TecVander. Todos os direitos reservados.</p>
+            <p class="text-sm">Conteúdo informativo sobre eletricidade. Consulte sempre um profissional qualificado.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para definir o ano atual no rodapé
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
 </body>
-</html>
